@@ -551,55 +551,52 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
 
-/* -------- COUNTDOWN TIMER -------- */
+/* -------- COUNTDOWN (DAYS ONLY) -------- */
 
 .countdown-section {
   text-align: center;
-  padding: 35px 15px;
+  padding: 30px 15px;
   background: #f4f8f5;
 }
 
 .countdown-title {
-  font-size: 1.3rem;
-  margin-bottom: 18px;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
   color: #0b5d1e;
   font-weight: 600;
 }
 
-#countdown {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.time-box {
+.days-left {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   background: #ffffff;
   border: 2px solid #0b5d1e;
-  border-radius: 10px;
-  padding: 12px 14px;
-  min-width: 75px;
+  border-radius: 12px;
+  padding: 18px 28px;
 }
 
-.time-box span {
-  display: block;
-  font-size: 1.5rem;
+.days-left span {
+  font-size: 2.4rem;
   font-weight: 700;
   color: #0b5d1e;
+  line-height: 1;
 }
 
-.time-box small {
-  font-size: 0.8rem;
+.days-left small {
+  font-size: 0.95rem;
+  margin-top: 6px;
   color: #333;
 }
 
-/* Mobile */
+/* Mobile fine-tuning */
 @media (max-width: 480px) {
   .countdown-title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
-  .time-box span {
-    font-size: 1.3rem;
+  .days-left span {
+    font-size: 2rem;
   }
 }
+
