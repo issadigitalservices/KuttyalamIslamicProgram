@@ -15,6 +15,11 @@
 </head>
 <body>
 
+    <!-- MINI HEADER -->
+<div class="mini-header">
+  🕌 ഹിമായതുൽ ഇസ്ലാം സംഘം - കുറ്റിയാളം | സ്വലാത്ത് വാർഷികവും മർഹൂം അസ്‌ലം ഉസ്താദ് ആണ്ട് നേർച്ചയും | ഫെബ്രുവരി 13 & 14, 2026
+</div>
+
 
   <!-- HERO SECTION -->
   <header class="hero">
@@ -184,7 +189,41 @@
   });
 </script>
 
+<script>
+  const hero = document.querySelector(".hero");
+  const miniHeader = document.querySelector(".mini-header");
+  const backToTop = document.querySelector(".back-to-top");
+  const reveals = document.querySelectorAll(".reveal");
 
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    /* Hero shrink */
+    if (scrollY > 80) {
+      hero.classList.add("shrink");
+      miniHeader.classList.add("show");
+      backToTop.style.display = "block";
+    } else {
+      hero.classList.remove("shrink");
+      miniHeader.classList.remove("show");
+      backToTop.style.display = "none";
+    }
+
+    /* Section reveal */
+    reveals.forEach(section => {
+      const top = section.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        section.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  ⬆
+</button>
 
 </body>
 </html>
