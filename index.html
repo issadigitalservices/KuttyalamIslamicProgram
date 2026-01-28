@@ -32,6 +32,30 @@
     </div>
   </header>
 
+  <!-- COUNTDOWN TIMER -->
+<section class="countdown-section">
+  <p class="countdown-title">⏳ പരിപാടി ആരംഭിക്കാൻ</p>
+  <div id="countdown">
+    <div class="time-box">
+      <span id="days">0</span>
+      <small>ദിവസങ്ങൾ</small>
+    </div>
+    <div class="time-box">
+      <span id="hours">0</span>
+      <small>മണിക്കൂർ</small>
+    </div>
+    <div class="time-box">
+      <span id="minutes">0</span>
+      <small>മിനിറ്റ്</small>
+    </div>
+    <div class="time-box">
+      <span id="seconds">0</span>
+      <small>സെക്കന്റ്</small>
+    </div>
+  </div>
+</section>
+
+
   <!-- WHATSAPP SHARE -->
 <div class="share-box">
   <a
@@ -217,6 +241,33 @@
       }
     });
   });
+</script>
+
+<script>
+  /* -------- COUNTDOWN TIMER -------- */
+
+  const eventDate = new Date("February 13, 2026 18:30:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerHTML =
+        "<strong>പരിപാടി ആരംഭിച്ചിരിക്കുന്നു</strong>";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+  }, 1000);
 </script>
 
 

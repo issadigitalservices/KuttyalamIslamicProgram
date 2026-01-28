@@ -550,3 +550,56 @@ body {
   z-index: 999;
   box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
+
+/* -------- COUNTDOWN TIMER -------- */
+
+.countdown-section {
+  text-align: center;
+  padding: 35px 15px;
+  background: #f4f8f5;
+}
+
+.countdown-title {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  color: #0b5d1e;
+  font-weight: 600;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: #ffffff;
+  border: 2px solid #0b5d1e;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-width: 75px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0b5d1e;
+}
+
+.time-box small {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .countdown-title {
+    font-size: 1.15rem;
+  }
+
+  .time-box span {
+    font-size: 1.3rem;
+  }
+}
