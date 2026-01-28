@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Malayalam', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("assets/images/mosque-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
+  );
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.bismillah {
+  font-family: 'Amiri', serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #f5e6b8;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .bismillah {
+    font-size: 1.4rem;
+  }
+}
+
+
+.overlay h1 {
+  font-size: 2.2rem;
+  color: #ffd700;
+}
+
+.overlay h2 {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+.date, .place {
+  font-size: 1.1rem;
+}
+
+/* SECTION */
+.section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #0b5d1e;
+}
+
+.section p {
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .date, .place {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  .section h3 {
+    font-size: 1.4rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .date, .place {
+    font-size: 0.95rem;
+  }
+
+  .section h3 {
+    font-size: 1.3rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+}
+
+/* -------- PROGRAM SCHEDULE -------- */
+
+.schedule {
+  background: #ffffff;
+}
+
+.day-card {
+  background: #f3f7f4;
+  border-left: 6px solid #0b5d1e;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.day-card h4 {
+  font-size: 1.3rem;
+  color: #0b5d1e;
+  margin-bottom: 15px;
+}
+
+.day-card h4 span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.day-card ul {
+  padding-left: 20px;
+}
+
+.day-card ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.time {
+  margin: 15px 0 5px;
+  font-size: 1.05rem;
+}
+
+.lead {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.sub-section {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.sub-section h5 {
+  color: #0b5d1e;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.sub-section p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .day-card {
+    padding: 18px;
+  }
+
+  .day-card h4 {
+    font-size: 1.15rem;
+  }
+
+  .sub-section h5 {
+    font-size: 1rem;
+  }
+}
+
+/* -------- GUESTS SECTION -------- */
+
+.guests {
+  background: #f8fbf8;
+}
+
+.guest-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.guest-list p {
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .guest-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------- CLOSING -------- */
+
+.closing {
+  text-align: center;
+}
+
+.thanks {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.dua-box {
+  background: #0b5d1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px auto;
+  max-width: 700px;
+  font-size: 1.05rem;
+}
+
+.organizer {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  color: #0b5d1e;
+}
+
+/* -------- FOOTER -------- */
+
+.footer {
+  background: #083f16;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+/* -------- PRINT FRIENDLY (PDF / A4) -------- */
+
+@media print {
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+  }
+
+  /* Remove background images & colors */
+  .hero,
+  .overlay,
+  .footer {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  .overlay h1,
+  .overlay h2,
+  .date,
+  .place {
+    color: #000 !important;
+  }
+
+  /* Reduce hero height */
+  .hero {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* Remove shadows & cards */
+  .day-card,
+  .guest-list p,
+  .sub-section,
+  .dua-box {
+    box-shadow: none !important;
+    background: #fff !important;
+    border: 1px solid #ccc;
+  }
+
+  /* Avoid page breaks inside sections */
+  section {
+    page-break-inside: avoid;
+  }
+
+  h3, h4, h5 {
+    page-break-after: avoid;
+  }
+
+  /* Hide footer if needed */
+  .footer {
+    display: none;
+  }
+}
+
+.share-box {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+/* -------- POSTER STYLE PDF -------- */
+
+@media print {
+
+  body {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 13pt;
+  }
+
+  /* Hide buttons & footer */
+  .share-box,
+  .footer {
+    display: none !important;
+  }
+
+  /* Poster spacing */
+  section {
+    margin-bottom: 25px;
+  }
+
+  /* Highlight titles */
+  h1, h2, h3 {
+    text-align: center;
+    color: #000;
+  }
+
+  /* Poster style hero */
+  .hero {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .bismillah {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  /* Strong boxes */
+  .day-card,
+  .dua-box {
+    border: 2px solid #000;
+    border-radius: 0;
+  }
+
+  /* A4 poster look */
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+}
+
