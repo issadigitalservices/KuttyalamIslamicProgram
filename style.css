@@ -412,3 +412,35 @@ body {
   }
 }
 
+.qr-section {
+  text-align: center;
+}
+
+#qrcode {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #0b5d1e;
+}
+
+/* -------- POSTER IMAGE MODE -------- */
+.poster {
+  max-width: 794px; /* A4 width in px */
+  margin: auto;
+  background: #ffffff;
+}
+
+.poster .hero {
+  height: 60vh;
+}
+
+.poster section {
+  padding: 25px 30px;
+}
+
+.poster .share-box,
+.poster .footer {
+  display: none;
+}
+
